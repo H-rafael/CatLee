@@ -44,7 +44,7 @@ $this->need('header.php');
                                     <div class="post-content">
                                         <div class="post-header">
                                                     <span class="category-meta">
-                                                        <a href="https://mkm.st/wordpress" title="查看所有文章 " rel="category tag">
+                                                        <a href="<?php $this->permalink() ?>" title="查看所有文章 " rel="category tag">
                                                             <i class="fa fa-folder-o">
                                                             </i>
                                                             <?php $this->category(' ',true,'无'); ?>
@@ -106,7 +106,7 @@ $this->need('header.php');
                 <div class="col-lg-12 col-md-12">
                     <div class="card mt40">
                         <div class="card-body">
-                            <a href="https://mkm.st/links" class="btn btn-danger btn-sm justify-content-center"
+                            <a href="<?php $this->options->siteUrl(); ?>" class="btn btn-danger btn-sm justify-content-center"
                                target="_blank" data-toggle="tooltip" data-original-title="点击进入申请友情链接">
                                 <span>友情关照</span>
                                 <span class="badge badge-white">1</span>

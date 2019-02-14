@@ -27,8 +27,8 @@
 <header class="header-global">
     <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
         <div class="container">
-            <a class="navbar-brand mr-lg-5" href="https://mkm.st">
-                <img src="<?php $this->options->themeUrl('assets/img/catlee.png'); ?>" alt="猫可喵" class="headerlogo">
+            <a class="navbar-brand mr-lg-5" href="<?php $this->options->siteUrl(); ?>">
+                <img src="<?php $this->options->themeUrl('assets/img/catlee.png'); ?>" alt="<?php $this->options->title() ?>" class="headerlogo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,8 +37,8 @@
                 <div class="navbar-collapse-header">
                     <div class="row">
                         <div class="col-6 collapse-brand">
-                            <a href="https://mkm.st">
-                                <img src="https://mkm.st/2019logo.png" alt="<?php $this->options->title(); ?>" class="headerlogo">
+                            <a href="<?php $this->options->siteUrl(); ?>">
+                                <img src="<?php $this->options->themeUrl('assets/img/catlee.png'); ?>" alt="<?php $this->options->title(); ?>" class="headerlogo">
                             </a>
                         </div>
                         <div class="col-6 collapse-close">
@@ -57,7 +57,7 @@
 
 
 <!--                    <li class="nav-item active">-->
-<!--                        <a href="https://mkm.st/" class="nav-link">-->
+<!--                        <a href="<?php $this->options->siteUrl(); ?>/" class="nav-link">-->
 <!--                            首页-->
 <!--                        </a>-->
 <!--                    </li>-->
@@ -67,29 +67,29 @@
 <!--                        </a>-->
 <!--                        <ul class="dropdown-menu">-->
 <!--                            <li class="nav-item">-->
-<!--                                <a href="https://mkm.st/wordpress" class="dropdown-item">-->
+<!--                                <a href="<?php $this->options->siteUrl(); ?>/wordpress" class="dropdown-item">-->
 <!--                                    WordPress-->
 <!--                                </a>-->
 <!--                            </li>-->
 <!--                            <li class="nav-item">-->
-<!--                                <a href="https://mkm.st/whmcs" class="dropdown-item">-->
+<!--                                <a href="<?php $this->options->siteUrl(); ?>/whmcs" class="dropdown-item">-->
 <!--                                    Whmcs-->
 <!--                                </a>-->
 <!--                            </li>-->
 <!--                            <li class="nav-item">-->
-<!--                                <a href="https://mkm.st/html" class="dropdown-item">-->
+<!--                                <a href="<?php $this->options->siteUrl(); ?>/html" class="dropdown-item">-->
 <!--                                    HTML&#038;JS-->
 <!--                                </a>-->
 <!--                            </li>-->
 <!--                            <li class="nav-item">-->
-<!--                                <a href="https://mkm.st/share" class="dropdown-item">-->
+<!--                                <a href="<?php $this->options->siteUrl(); ?>/share" class="dropdown-item">-->
 <!--                                    喵搬运-->
 <!--                                </a>-->
 <!--                            </li>-->
 <!--                        </ul>-->
 <!--                    </li>-->
 <!--                    <li class="nav-item">-->
-<!--                        <a href="https://mkm.st/meownotes" class="nav-link">-->
+<!--                        <a href="<?php $this->options->siteUrl(); ?>/meownotes" class="nav-link">-->
 <!--                            喵笔记生态圈-->
 <!--                        </a>-->
 <!--                    </li>-->
@@ -105,7 +105,7 @@
                             <span class="close">
                                 X
                             </span>
-                    <form role="search" id="searchform" method="get" action="https://mkm.st/">
+                    <form role="search" id="searchform" method="get" action="<?php $this->options->siteUrl(); ?>/">
                         <input type="search" name="s" value="" placeholder="输入搜索关键词..." />
                     </form>
                 </div>

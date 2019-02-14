@@ -11,7 +11,7 @@
         <div class="row align-items-center justify-content-md-between">
             <div class="col-md-12">
                 <div class="copyright text-center">
-                    © 2019 <a href="https://mkm.st" target="_blank" ><?php $this->options->title(); ?> </a>. Theme by <a href="https://mkm.st"  target="_blank" >Firewood Cutter
+                    © 2019 <a href="<?php $this->options->siteUrl(); ?>" target="_blank" ><?php $this->options->title(); ?> </a>. Theme by <a href="http://qqexit.com"  target="_blank" >Firewood Cutter
                     </a> | CatLee
                     <div style="display:none;"><script type="text/javascript" src="//js.users.51.la/19786753.js"></script>			</div>
                 </div>
