@@ -59,7 +59,7 @@ $this->need('header.php');
                                         <div class="post-meta author-box mb10">
                                             <div class="thw-autohr-bio-img">
                                                 <div class="thw-img-border">
-                                                    <img src="<?php echo $this->options->avatarUrl ? $this->options->avatarUrl : __TYPECHO_GRAVATAR_PREFIX__ . md5( strtolower( trim( $this->author->mail ) ) ) . '?d=mp&r=g&s=120;' ?>" class="img-fluid" alt="<?php $this->options->title(); ?>">
+                                                    <img src="<?php echo $this->options->avatarUrl ? $this->options->avatarUrl : __TYPECHO_GRAVATAR_PREFIX__ . md5( strtolower( trim( $this->author->mail ) ) ) . '?d=mp&r=g&s=220;' ?>" class="img-fluid" alt="<?php $this->options->title(); ?>">
                                                 </div>
                                             </div>
                                             <div class="post-meta-content">

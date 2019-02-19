@@ -21,11 +21,11 @@ $this->need('header.php');
             <div class="row">
                 <div class="col-lg-10 col-md-10 ml-auto mr-auto">                                    <div class="post-single">
                         <div class="entry-header single-entry-header">
-                            <h2 class="entry-title wow swing  animated animated" style="visibility: visible; animation-name: swing;"><?php $this->title() ?></h2>
+                                <h2 class="entry-title wow swing  animated animated" style="visibility: visible; animation-name: swing;"><?php $this->title() ?></h2>
                             <div class="post-meta author-box wow bounceInRight animated" style="visibility: visible; animation-name: bounceInRight;">
                                 <div class="thw-autohr-bio-img">
                                     <div class="thw-img-border">
-                                        <img src="<?php echo $this->options->avatarUrl ? $this->options->avatarUrl : __TYPECHO_GRAVATAR_PREFIX__ . md5( strtolower( trim( $this->author->mail ) ) ) . '?d=mp&r=g&s=120;' ?>" class="img-fluid" alt="<?php $this->options->title(); ?>">
+                                        <img src="<?php echo $this->options->avatarUrl ? $this->options->avatarUrl : __TYPECHO_GRAVATAR_PREFIX__ . md5( strtolower( trim( $this->author->mail ) ) ) . '?d=mp&r=g&s=220;' ?>" class="img-fluid" alt="<?php $this->options->title(); ?>">
                                     </div>
                                 </div>
                                 <div class="post-meta-content">
@@ -50,7 +50,7 @@ $this->need('header.php');
                     <div class="thw-author-box author-box thw-sept wow rollIn animated" style="visibility: visible; animation-name: rollIn;">
                         <div class="thw-autohr-bio-img">
                             <div class="thw-img-border">
-                                <img src="<?php echo $this->options->avatarUrl ? $this->options->avatarUrl : __TYPECHO_GRAVATAR_PREFIX__ . md5( strtolower( trim( $this->author->mail ) ) ) . '?d=mp&r=g&s=120;' ?>" class="img-fluid" alt="<?php $this->options->title(); ?>">
+                                <img src="<?php echo $this->options->avatarUrl ? $this->options->avatarUrl : __TYPECHO_GRAVATAR_PREFIX__ . md5( strtolower( trim( $this->author->mail ) ) ) . '?d=mp&r=g&s=220;' ?>" class="img-fluid" alt="<?php $this->options->title(); ?>">
                             </div>
                         </div>
                         <div class="author-info">
@@ -60,30 +60,9 @@ $this->need('header.php');
                     </div>
                     <nav class="post-navigation thw-sept wow bounceInUp animated" style="visibility: visible; animation-name: bounceInUp;">
                         <?php theNextPrev($this); ?>
-
-<!--                        <div class="post-previous">-->
-<!--                            <a href="https://mkm.st/289.html" rel="next">-->
-<!--                                <span><i class="fa fa-angle-left"></i> Previous Post</span>-->
-<!--                                <h4>lolimeow主题这样滴排版好像会好看些额…</h4>-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                        <div class="post-next">-->
-<!--                            <a href="https://mkm.st/274.html" rel="prev">-->
-<!--                                <span>Next Post <i class="fa fa-angle-right"></i></span>-->
-<!--                                <h4>其实Lolimeow主题的seo能力挺强的</h4>-->
-<!--                            </a>-->
-<!--                        </div>-->
-
-
-
                     </nav>
                     <?php $this->need('comments.php'); ?>
                 </div>
-<!--                <div class="row wow fadeInUp animated animated" style="visibility: visible; animation-name: fadeInUp;">-->
-<!--                    <div class="col-lg-12">-->
-<!--                        <h3 class="title-normal thw-sept text-center">相关推荐</h3>	 </div>-->
-<!--                    <div class="col-md-4"><div class="card card-blog"><div class="card-header card-header-image"><a href="https://mkm.st/289.html"><img class="img img-raised" src="https://moguos.oss-cn-shenzhen.aliyuncs.com/lolimeow/assets/images/rand/rand (6).jpg" alt="lolimeow主题这样滴排版好像会好看些额..."></a></div><div class="card-body"><h4 class="card-title"><a href="https://mkm.st/289.html" title="lolimeow主题这样滴排版好像会好看些额…">lolimeow主题这样滴排版好像会…</a></h4></div></div></div><div class="col-md-4"><div class="card card-blog"><div class="card-header card-header-image"><a href="https://mkm.st/274.html"><img class="img img-raised" src="https://moguos.oss-cn-shenzhen.aliyuncs.com/lolimeow/assets/images/rand/rand (7).jpg" alt="其实Lolimeow主题的seo能力挺强的"></a></div><div class="card-body"><h4 class="card-title"><a href="https://mkm.st/274.html" title="其实Lolimeow主题的seo能力挺强的">其实Lolimeow主题的seo能力挺强的</a></h4></div></div></div><div class="col-md-4"><div class="card card-blog"><div class="card-header card-header-image"><a href="https://mkm.st/270.html"><img class="img img-raised" src="https://moguos.oss-cn-shenzhen.aliyuncs.com/lolimeow/assets/images/rand/rand (5).jpg" alt="个人笔记本"></a></div><div class="card-body"><h4 class="card-title"><a href="https://mkm.st/270.html" title="密码保护：个人笔记本">密码保护：个人笔记本</a></h4></div></div></div>-->
-<!--                </div>-->
             </div>
         </div>
     </div>

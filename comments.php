@@ -28,14 +28,14 @@ function threadedComments($comments, $options) {
             <div class="author-box">
                 <div class="thw-autohr-bio-img">
                     <div class="thw-img-border">
-                        <?php $comments->gravatar('60', 'img-fluid'); ?>
+                        <?php $comments->gravatar('150', 'img-fluid'); ?>
                     </div>
                 </div>
             </div>
             <div class="comment-body">
                 <div class="meta-data">
                     <span class="pull-right"     onclick="return addComment.moveForm( "comment-24", "24", "respond", "222" )">
-                        <?php $comments->reply('<i class="fa fa-mail-reply-all"></i>回复'); ?>
+                    <?php $comments->reply('<i class="fa fa-mail-reply-all"></i>回复'); ?>
                     </span>
 
 
@@ -44,9 +44,9 @@ function threadedComments($comments, $options) {
                         <span><?php echo parseUserAgent($comments->agent); ?></span>
                     <?php endif; ?>
 
-<!--                    <span class="comment-author">心跳wvv-->
-<!--                        <span class="badge badge-info"><i class="fa fa-globe"></i> 游客</span>-->
-<!--                    </span>-->
+                    <!--                    <span class="comment-author">心跳wvv-->
+                    <!--                        <span class="badge badge-info"><i class="fa fa-globe"></i> 游客</span>-->
+                    <!--                    </span>-->
                     <span class="comment-date"> <?php $comments->date('Y年m月d日 H:i'); ?></span>
                 </div>
                 <div class="comment-content">
@@ -76,10 +76,10 @@ function threadedComments($comments, $options) {
 <div id="comments" class="comments-area thw-sept wow bounceInUp animated" style="visibility: visible; animation-name: bounceInUp;">
     <h3 class="comments-heading"><?php $this->commentsNum(_t('0 Comments'), _t('1 Comments'), _t('%d Comments')); ?> </h3>
     <?php if($this->allow('comment')): ?>
-    <?php $this->comments()->to($comments); ?>
-    <ul class="comments-list">
-        <?php $comments->listComments(); ?>
-    </ul>
+        <?php $this->comments()->to($comments); ?>
+        <ul class="comments-list">
+            <?php $comments->listComments(); ?>
+        </ul>
     <?php endif; ?>
 
     <div class="pagenav text-center"></div>
@@ -87,10 +87,20 @@ function threadedComments($comments, $options) {
 
 <h3 class="title-normal thw-sept text-center wow swing animated"   style="visibility: visible; animation-name: swing;">留下你的评论</h3>
 <div class="clearfix text-center" >
-<!--    *评论支持代码高亮&lt;pre class="prettyprint linenums"&gt;代码&lt;/pre&gt;-->
+    <!--    *评论支持代码高亮&lt;pre class="prettyprint linenums"&gt;代码&lt;/pre&gt;-->
 </div>
 <div  class="respond" id="<?php $this->respondId(); ?>" >
     <form method="post" action="<?php $this->commentUrl() ?>" id="commentform" role="form">
+        <?php if($this->user->hasLogin()): ?>
+            <p>
+                <?php _e('登录身份: '); ?>
+                <a href="<?php $this->options->profileUrl(); ?>">
+                    <?php $this->user->screenName(); ?>
+                </a>.
+                <a href="<?php $this->options->logoutUrl(); ?>" title="Logout" no-pjax>
+                    <?php _e('退出'); ?>&raquo;</a>
+            </p>
+        <?php else: ?>
         <div class="row">
             <div class="col-md-4">
                 <div class="form-group">
@@ -109,6 +119,8 @@ function threadedComments($comments, $options) {
             </div>
         </div>
 
+        <?php endif; ?>
+
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
@@ -121,4 +133,3 @@ function threadedComments($comments, $options) {
         </div>
     </form>
 </div>
-   
