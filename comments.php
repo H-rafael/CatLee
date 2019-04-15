@@ -28,7 +28,7 @@ function threadedComments($comments, $options) {
             <div class="author-box">
                 <div class="thw-autohr-bio-img">
                     <div class="thw-img-border">
-                        <?php $comments->gravatar('150', 'img-fluid'); ?>
+                        <?php $comments->gravatar('150', ''); ?>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,6 @@ function threadedComments($comments, $options) {
                 </div>
                 <div class="comment-content">
                     <?php showCommentContent($comments->coid); ?>
-
                 </div>
             </div>
         </div>

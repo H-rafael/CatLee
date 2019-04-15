@@ -55,7 +55,7 @@ $this->need('header.php');
                         </div>
                         <div class="author-info">
                             <h4><?php $this->options->title(); ?></h4>
-                            <p>雪夜红墙你曾说过喜欢，我曾说过，喜欢是不够的，而且最后证明确实是不够的，但至少你曾说过喜欢，我很喜欢。 日后你来看我或我来看你，或他山云雾之中再见，都是人生欢愉事。 我喜欢你，你喜欢我，这就很好。 红墙白雪你说曾说过喜欢，我依然喜欢。 红墙白雪，要你喜欢。渔得鱼心满意足,樵得樵眼笑眉</p>
+                            <p>雪夜红墙你曾说过喜欢，我曾说过，喜欢是不够的，而且最后证明确实是不够的，但至少你曾说过喜欢，我很喜欢。 日后你来看我或我来看你，或他山云雾之中再见，都是人生欢愉事。 我喜欢你，你喜欢我，这就很好。 红墙白雪你说曾说过喜欢，我依然喜欢。 红墙白雪，要你喜欢。渔得鱼心满意足,樵得樵眼笑眉舒。</p>
                         </div>
                     </div>
                     <nav class="post-navigation thw-sept wow bounceInUp animated" style="visibility: visible; animation-name: bounceInUp;">
